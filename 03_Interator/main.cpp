@@ -85,8 +85,10 @@ void test4()
 
     std::list<std::string> name{"Larry", "Moe", "Curly"};
     auto it2 = name.crbegin();
-    std::cout << *it2 << std::endl
+    std::cout << *it2 << std::endl;
 }
+
+// abc dddđjjdklàkl
 
 int main()
 {

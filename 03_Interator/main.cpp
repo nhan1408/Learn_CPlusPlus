@@ -86,6 +86,17 @@ void test4()
     std::list<std::string> name{"Larry", "Moe", "Curly"};
     auto it2 = name.crbegin();
     std::cout << *it2 << std::endl;
+
+    std::map<std::string, std::string> favorites{
+        {"Frank", "C++"},
+        {"Bill", "Java"},
+        {"James", "Haskell"}};
+    auto it3 = favorites.begin(); // iterator over map of string, string pairs
+    while (it3 != favorites.end())
+    {
+        std::cout << it3->first << ":" << it3->second << std::endl;
+        it3++;
+    }
 }
 
 // abc dddđjjdklàkl
@@ -94,7 +105,7 @@ int main()
 {
     // test1();
     // test2();
-    // test3();
-    test4();
+    test3();
+    // test4();
     return 0;
 }
